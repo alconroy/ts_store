@@ -9,7 +9,7 @@ GIT
     elasticsearch-rails (0.1.8)
 
 GIT
-  remote: git://github.com/spree-contrib/spree_mail_settings.git
+  remote: https://github.com/spree-contrib/spree_mail_settings.git
   revision: d416a1e355893bda625ed5bea187d39526aa52f9
   branch: 3-0-stable
   specs:
@@ -17,15 +17,15 @@ GIT
       spree_backend (~> 3.0.0)
 
 GIT
-  remote: git://github.com/spree-contrib/spree_reviews.git
-  revision: 664ed28313dca469ee39e7ca6ba9a6ac0df0d4eb
+  remote: https://github.com/spree-contrib/spree_reviews.git
+  revision: 79a15612e66a15b8b013e429ce8ab2bc22845933
   branch: 3-0-stable
   specs:
     spree_reviews (3.0.0.beta)
       spree_core (~> 3.0.0)
 
 GIT
-  remote: git://github.com/spree-contrib/spree_static_content.git
+  remote: https://github.com/spree-contrib/spree_static_content.git
   revision: 80a74e1ad8e1843c6bfabcd700dc8edb84822fdd
   branch: 3-0-stable
   specs:
@@ -33,8 +33,8 @@ GIT
       spree_core (~> 3.0.0)
 
 GIT
-  remote: git://github.com/spree/spree_auth_devise.git
-  revision: 145a06354a39a7ceeea4ad93e39c63c1ecb13c52
+  remote: https://github.com/spree/spree_auth_devise.git
+  revision: 1ac9dcc33049b185a0dd884c832583feb4b91890
   branch: 3-0-stable
   specs:
     spree_auth_devise (3.0.6)
@@ -45,19 +45,20 @@ GIT
       spree_core (~> 3.0.0)
 
 GIT
-  remote: git://github.com/spree/spree_gateway.git
-  revision: 59ac5bcacf948cbd194814db906e7546c3d9852c
+  remote: https://github.com/spree/spree_gateway.git
+  revision: 3cb02b0b3a45be5f4ace9d9295ffb3c11864e605
   branch: 3-0-stable
   specs:
     spree_gateway (3.0.0)
       spree_core (~> 3.0.0)
 
 GIT
-  remote: git://github.com/vinsol/spree_favorite_products.git
-  revision: 34bb39dbc50f79c25e509c2c9cfcf86b822f17c7
+  remote: https://github.com/vinsol/spree_favorite_products.git
+  revision: 3f2cf9a8658f7d3fc812803ba4fbb7385f44d773
   branch: 3-0-stable
   specs:
     spree_favorite_products (3.0.0)
+      minitest (~> 5.9.1)
       spree_core (~> 3.0.0)
 
 GEM
@@ -103,24 +104,25 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    acts_as_list (0.7.2)
+    acts_as_list (0.9.19)
       activerecord (>= 3.0)
-    addressable (2.4.0)
-    arel (6.0.3)
-    autoprefixer-rails (6.3.6)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    arel (6.0.4)
+    autoprefixer-rails (9.8.6)
       execjs
     awesome_nested_set (3.0.3)
       activerecord (>= 4.0.0, < 5)
-    bcrypt (3.1.11)
+    bcrypt (3.1.18)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bonsai-elasticsearch-rails (0.0.4)
-    bootstrap-sass (3.3.6)
+    bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    builder (3.2.2)
+    builder (3.2.4)
     byebug (8.2.2)
-    camertron-eprun (1.1.0)
+    camertron-eprun (1.1.1)
     cancancan (1.10.1)
     canonical-rails (0.0.11)
       rails (>= 3.1, < 5.0)
@@ -176,9 +178,8 @@ GEM
       nenv
       rspec-logsplit (>= 0.1.2)
       timers (>= 4.1.1)
-    cldr-plurals-runtime-rb (1.0.1)
-    climate_control (0.0.3)
-      activesupport (>= 3.0)
+    cldr-plurals-runtime-rb (1.1.0)
+    climate_control (0.2.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.1.1)
@@ -188,10 +189,11 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.10.0)
-    colorize (0.7.7)
-    concurrent-ruby (1.0.1)
+    colorize (0.8.1)
+    concurrent-ruby (1.1.10)
     connection_pool (2.2.0)
-    css_parser (1.4.1)
+    crass (1.0.6)
+    css_parser (1.7.1)
       addressable
     debug_inspector (0.0.2)
     deface (1.0.2)
@@ -199,7 +201,7 @@ GEM
       nokogiri (~> 1.6.0)
       polyglot
       rails (>= 3.1)
-    devise (3.5.6)
+    devise (3.5.10)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -219,10 +221,11 @@ GEM
       multi_json
     erubis (2.7.0)
     excon (0.49.0)
-    execjs (2.6.0)
+    execjs (2.8.1)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
     ffaker (1.32.1)
+    ffi (1.12.2)
     fog (1.24.0)
       fog-brightbox
       fog-core (~> 1.23)
@@ -261,16 +264,17 @@ GEM
     formatador (0.2.5)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
-    globalid (0.3.6)
-      activesupport (>= 4.1.0)
+    globalid (0.4.2)
+      activesupport (>= 4.2.0)
     hashie (3.4.3)
     highline (1.6.21)
     hitimes (1.2.3)
     htmlentities (4.3.4)
-    httparty (0.13.7)
-      json (~> 1.8)
+    httparty (0.19.1)
+      mime-types (~> 3.0)
       multi_xml (>= 0.5.2)
-    i18n (0.7.0)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
     inflecto (0.0.2)
     ipaddress (0.8.3)
     jbuilder (2.4.1)
@@ -282,31 +286,32 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
-    json (1.8.3)
-    kaminari (0.16.3)
+    json (1.8.6)
+    kaminari (0.17.0)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    loofah (2.0.3)
+    loofah (2.18.0)
+      crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.6.4)
-      mime-types (>= 1.16, < 4)
-    mime-types (3.0)
+    mail (2.7.1)
+      mini_mime (>= 0.1.1)
+    mime-types (3.4.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0221)
-    mini_portile2 (2.0.0)
-    minitest (5.8.4)
-    monetize (1.4.0)
-      money (~> 6.7)
-    money (6.7.0)
-      i18n (>= 0.6.4, <= 0.7.0)
-      sixarm_ruby_unaccent (>= 1.1.1, < 2)
+    mime-types-data (3.2022.0105)
+    mini_mime (1.1.2)
+    mini_portile2 (2.1.0)
+    minitest (5.9.1)
+    monetize (1.12.0)
+      money (~> 6.12)
+    money (6.16.0)
+      i18n (>= 0.6.4, <= 2)
     multi_json (1.11.2)
-    multi_xml (0.5.5)
+    multi_xml (0.6.0)
     multipart-post (2.0.0)
     nenv (0.2.0)
     net-ssh (3.1.1)
-    nokogiri (1.6.7.2)
-      mini_portile2 (~> 2.0.0.rc2)
+    nokogiri (1.6.8.1)
+      mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
     paperclip (4.2.4)
       activemodel (>= 3.2.0)
@@ -316,19 +321,21 @@ GEM
     paranoia (2.1.5)
       activerecord (~> 4.0)
     pg (0.18.4)
-    polyamorous (1.3.0)
+    polyamorous (1.3.3)
       activerecord (>= 3.0)
     polyglot (0.3.5)
-    premailer (1.8.6)
-      css_parser (>= 1.3.6)
+    premailer (1.11.1)
+      addressable
+      css_parser (>= 1.6.0)
       htmlentities (>= 4.0.0)
-    premailer-rails (1.9.1)
-      actionmailer (>= 3, < 5)
+    premailer-rails (1.11.1)
+      actionmailer (>= 3)
       premailer (~> 1.7, >= 1.7.9)
     proxies (0.2.1)
+    public_suffix (3.1.1)
     rabl (0.9.4.pre1)
       activesupport (>= 2.3.14)
-    rack (1.6.4)
+    rack (1.6.13)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.2)
@@ -342,14 +349,14 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.2.2)
       sprockets-rails
-    rails-deprecated_sanitizer (1.0.3)
+    rails-deprecated_sanitizer (1.0.4)
       activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.7)
-      activesupport (>= 4.2.0.beta, < 5.0)
-      nokogiri (~> 1.6.0)
+    rails-dom-testing (1.0.9)
+      activesupport (>= 4.2.0, < 5.0)
+      nokogiri (~> 1.6)
       rails-deprecated_sanitizer (>= 1.0.1)
-    rails-html-sanitizer (1.0.3)
-      loofah (~> 2.0)
+    rails-html-sanitizer (1.4.3)
+      loofah (~> 2.3)
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
@@ -360,24 +367,32 @@ GEM
       activesupport (= 4.2.2)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (11.1.2)
+    rake (13.0.6)
     ransack (1.4.1)
       actionpack (>= 3.0)
       activerecord (>= 3.0)
       activesupport (>= 3.0)
       i18n
       polyamorous (~> 1.1)
+    rb-fsevent (0.11.1)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
     rdoc (4.2.2)
       json (~> 1.4)
     redis (3.2.1)
     redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
-    responders (2.1.2)
-      railties (>= 4.2.0, < 5.1)
+    responders (2.4.1)
+      actionpack (>= 4.2.0, < 6.0)
+      railties (>= 4.2.0, < 6.0)
     rspec-logsplit (0.1.3)
     s3 (0.3.24)
       proxies (~> 0.2.0)
-    sass (3.4.22)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
@@ -398,7 +413,6 @@ GEM
       json (~> 1.0)
       redis (~> 3.2, >= 3.2.1)
       redis-namespace (~> 1.5, >= 1.5.2)
-    sixarm_ruby_unaccent (1.1.1)
     spree (3.0.4)
       spree_api (= 3.0.4)
       spree_backend (= 3.0.4)
@@ -455,35 +469,34 @@ GEM
     spree_sample (3.0.4)
       spree_core (= 3.0.4)
     spring (1.6.4)
-    sprockets (3.5.2)
+    sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (2.3.3)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    state_machines (0.4.0)
-    state_machines-activemodel (0.3.0)
-      activemodel (~> 4.1)
-      state_machines (>= 0.4.0)
-    state_machines-activerecord (0.3.0)
-      activerecord (~> 4.1)
-      state_machines-activemodel (>= 0.3.0)
-    stringex (2.6.0)
-    thor (0.19.1)
-    thread_safe (0.3.5)
+    state_machines (0.5.0)
+    state_machines-activemodel (0.7.1)
+      activemodel (>= 4.1)
+      state_machines (>= 0.5.0)
+    state_machines-activerecord (0.6.0)
+      activerecord (>= 4.1)
+      state_machines-activemodel (>= 0.5.0)
+    stringex (2.8.5)
+    thor (0.20.3)
+    thread_safe (0.3.6)
     tilt (2.0.2)
     timers (4.1.1)
       hitimes
     truncate_html (0.9.2)
     turbolinks (2.5.3)
       coffee-rails
-    twitter_cldr (3.3.0)
+    twitter_cldr (3.6.0)
       camertron-eprun
-      cldr-plurals-runtime-rb (~> 1.0.0)
-      json
+      cldr-plurals-runtime-rb (~> 1.0)
       tzinfo
-    tzinfo (1.2.2)
+    tzinfo (1.2.9)
       thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
@@ -493,7 +506,7 @@ GEM
       activesupport (>= 3.2)
       railties (>= 3.2)
       tzinfo
-    warden (1.2.6)
+    warden (1.2.7)
       rack (>= 1.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
